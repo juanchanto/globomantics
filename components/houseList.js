@@ -2,9 +2,9 @@ import React, { useEffect, useState } from "react";
 import HouseRow from "./houseRow";
 
 
-
 const HouseList = () => {
   const [houses, setHouses] = useState([]);
+  const counter = useRef(0);
 
   useEffect(() => {
     const fetchHouses = async () => {
@@ -13,6 +13,7 @@ const HouseList = () => {
         setHouses(houses);
     };
     fetchHouses();
+    counter.current++;
   }, []);
 
   const addHouse = () => {
