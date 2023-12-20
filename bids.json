@@ -83,6 +83,12 @@
       "bidder": "",
       "amount": 0,
       "id": 14
+    },
+    {
+      "houseId": 1,
+      "bidder": "bhh",
+      "amount": 22,
+      "id": 15
     }
   ]
 }
